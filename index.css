@@ -1,0 +1,18 @@
+/* Simple styles for Dale's Study Space */
+:root{
+  --green-50: #f0fdf4;
+  --green-600: #047857;
+  --green-700: #065f46;
+}
+html,body,#root{height:100%;margin:0;font-family:'Times New Roman', Times, serif;background:var(--green-50);}
+.container{max-width:960px;margin:18px auto;padding:16px;}
+.card{background:white;border-radius:14px;box-shadow:0 6px 20px rgba(10,10,10,0.06);padding:16px;}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+.title{color:var(--green-700);font-size:28px;margin:0;}
+.subtitle{color:#065f46;opacity:0.9;margin:0;font-size:14px;}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;}
+@media(min-width:900px){.grid{grid-template-columns:2fr 1fr;}}
+.tasks-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
+.task{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;border:1px solid #e6f3ec;}
+.btn{background:var(--green-600);color:white;padding:8px 12px;border-radius:8px;border:none;cursor:pointer;}
+.btn-muted{background:transparent;border:1px solid #ddd;padding:8px 10px;border-radius:8px;cursor:pointer;}
